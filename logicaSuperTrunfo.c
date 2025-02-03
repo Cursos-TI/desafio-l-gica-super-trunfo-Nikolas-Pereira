@@ -1,30 +1,32 @@
 #include <stdio.h>
 
 int main() {
-    char Campo_limpo[100], Jundiai[200];
-    int populacao_Campo_limpo, populacao_Jundiai;
+    char Cidade1[100], Cidade2[100];  
+    int populacao_Cidade1, populacao_Cidade2;
 
-    printf("Digite o nome da cidade:\n");
-    scanf("%s", &Campo_limpo);
+    printf("Digite o nome da primeira cidade:\n");
+    scanf("%99s", Cidade1);  
 
-    printf("Digite o nome da cidade:\n");
-    scanf("%s", &Jundiai);
+    printf("Digite o nome da segunda cidade:\n");
+    scanf("%99s", Cidade2);  
 
-    printf("Digite a população da cidade:\n");
-    scanf("%d", &populacao_Campo_limpo);
+    printf("Digite a população da primeira cidade:\n");
+    scanf("%d", &populacao_Cidade1);  
 
-    printf("Digite a população da cidade:\n");
-    scanf("%d", &populacao_Jundiai);
+    printf("Digite a população da segunda cidade:\n");
+    scanf("%d", &populacao_Cidade2);  
 
-   if (populacao_Campo_limpo > populacao_Jundiai) {
-        printf("Campo limpo tem maior população.\n");
-    } else if (populacao_Jundiai > populacao_Campo_limpo) {
-        printf("Jundiai tem maior população!\n");
+  
+    if (populacao_Cidade1 > populacao_Cidade2) {
+        printf("%s tem maior população.\n", Cidade1);  
+    } else if (populacao_Cidade2 > populacao_Cidade1) {
+        printf("%s tem maior população!\n", Cidade2);  
     } else {
+        printf("As cidades têm a mesma população!\n");  
+    }
 
-        printf("Jundiai tem mais população! \n");
-    }
-    }
+    return 0;
+}
 
 
 
